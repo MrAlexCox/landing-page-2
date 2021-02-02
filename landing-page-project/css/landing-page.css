@@ -1,0 +1,100 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("../images/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: blue;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  header {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  #title-section {
+    grid-area: 1 / 1 / 5 / 5;
+  }
+
+  #title {
+    margin-top: 3vh;
+    font-size: 8vh;
+    text-align: center;
+    color: black;
+  }
+
+  .header-buttons {
+    grid-area: 5 / 1 / 7 / 5;
+    text-align: center;
+  }
+
+  .button {
+    width: 15vh;
+    height: 15vh;
+    background-image: url("../images/button-bg.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: red;
+    font-size: 4vh;
+  }
+
+  .segment {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .section-1 {
+  }
+
+  #section-1-title {
+    text-align: right;
+    text-decoration: underline;
+    margin-right: 2vh;
+    padding-top: 1vh;
+  }
+
+  .section-text {
+    padding: 2vh;
+    text-align: justify;
+  }
+
+  #section-2 {
+  }
+
+  .footer-button {
+    width: 45vh;
+    height: 20vh;
+    background-image: url('../images/footer.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background: rgba(76, 175, 80, 0.0)
+  }
+
+
+
+  }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
