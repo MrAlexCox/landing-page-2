@@ -19,7 +19,7 @@ document.getElementById("title").onload = function() {typeWriter()};
 //     window.scrollTo(0, top);
 // }
 
-function scroll(h) {
+function buttonScroll(h) {
   let element = document.getElementById('h');
   element.scrollIntoView({behaviour: 'smooth', block: 'offsetTop', inline: "nearest"})
 }
