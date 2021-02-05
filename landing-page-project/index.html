@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>blog-post</title>
+    <title>Landing Page</title>
     <meta
       content="width=device-width, initial-scale=1, maximum-scale=1"
       name="viewport"
@@ -12,40 +12,70 @@
 
 </head>
 
+
+
   <body>
+
+    <div id='container'>
     <header class='segment'>
-      <div id=title-section>
+      <div id='title-section'>
         <h1 id='title'>Welcome <br> To This <br> Page</h1>
       </div>
 
-      <div class='header-buttons'>
+      <div class="nav-bar">
+        <div class="button-wrap">
+          <button class='dropbtn'>SECTION SELECTOR</button>
+          <div class="drop-content" id="nav-list"></div>
+        </div>
+      </div>
+
+      <!-- <div class='header-buttons'>
         <button class='button' onclick="buttonScroll('section-2')">Section One </button>
         <button class='button' onclick="jump('section-2')">Section Two </button>
         <button class='button' onclick="jump('section-3')">Section Three </button>
-      </div>
+      </div> -->
     </header>
 
     <div class='segment' id='section-1'>
-      <h2 id=section-1-title>This is a section</h2>
-      <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+      <h2 class=section-title-right>This is a section</h2>
+      <div class='segment-right'>
+        <div class='seg-img'>
+          <img src="images/decembo115.jpg" alt="Orange Chimney">
+        </div>
+        <div class='seg-right-p'>
+          <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
     </div>
 
     <div class='segment' id='section-2'>
-      <h2 id=section-2-title>This is a section</h2>
-      <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+      <h2 class=section-title-left>This is a section</h2>
+      <div class='segment-left'>
+        <div class='seg-img-right'>
+          <img src="images/decembo115.jpg" alt="Orange Chimney">
+        </div>
+        <div class='seg-right-p'>
+          <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
     </div>
 
     <div class='segment' id='section-3'>
-      <h2 id=section-2-title>This is a section</h2>
-      <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
+      <h2 class=section-title-right>This is a section</h2>
+      <div class='segment-right'>
+        <div class='seg-img'>
+          <img src="images/decembo115.jpg" alt="Orange Chimney">
+        </div>
+        <div class='seg-right-p'>
+          <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
     </div>
 
-    <footer class='segment'>
-      <button class='footer-button'>Section One </button>
-    </footer>
+  </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+
 
 
 
