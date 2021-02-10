@@ -21,6 +21,18 @@ h1 {
 
 }
 
+header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  height: 20vh;
+  width: 100%;
+  padding-top: ;
+
+}
+
+
+
 .dropbtn {
   font-family: 'Josefin Sans', sans-serif;
   background-image: url("../images/header-bg.jpg");
@@ -38,7 +50,7 @@ h1 {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  background-image: url("../images/header-bg.jpg");
+  /* background-image: url("../images/header-bg.jpg"); */
   background-size: contain;
   border-radius: 0px 10px 10px 0px; /* Rounded corners */
   cursor: pointer; /* Add a mouse pointer on hover */
@@ -74,16 +86,16 @@ h1 {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-  header {
+  /* header {
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-  }
+  } */
 
-  #title-section {
+  /* #title-section {
     grid-area: 1 / 1 / 5 / 5;
   }
 
@@ -92,10 +104,10 @@ h1 {
     font-size: 9vh;
     text-align: center;
     color: ;
-  }
+  } */
 
   .nav-bar {
-    grid-area: 5 / 1 / 7 / 5;
+    /* grid-area: 5 / 1 / 7 / 5; */
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
     display: inline-block;
@@ -148,7 +160,7 @@ h1 {
     height: 5vh;
     /* border-bottom: 1px black solid; */
     font-size: 2vh;
-    background-image: url("../images/header-bg.jpg");
+    /* background-image: url("../images/header-bg.jpg"); */
     background-size: contain;
 
   }
@@ -254,7 +266,7 @@ h1 {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
-header {
+/* header {
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -272,10 +284,10 @@ header {
   font-size: 9vh;
   text-align: center;
   color: ;
-}
+} */
 
 .nav-bar {
-  grid-area: 5 / 1 / 7 / 5;
+  /* grid-area: 5 / 1 / 7 / 5; */
   font-family: 'Josefin Sans', sans-serif;
   position: relative;
   display: inline-block;
@@ -411,7 +423,7 @@ footer {
     width: 750px;
   }
 
-
+/*
   header {
 
     display: grid;
@@ -430,10 +442,10 @@ footer {
     font-size: 9vh;
     text-align: center;
     color: ;
-  }
+  } */
 
   .nav-bar {
-    grid-area: 5 / 1 / 7 / 5;
+    /* grid-area: 5 / 1 / 7 / 5; */
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
     display: inline-block;
@@ -505,7 +517,7 @@ footer {
     height: 5vh;
     /* border-bottom: 1px black solid; */
     font-size: 2vh;
-    background-image: url("../images/header-bg.jpg");
+    /* background-image: url("../images/header-bg.jpg"); */
     background-size: contain;
 
   }
