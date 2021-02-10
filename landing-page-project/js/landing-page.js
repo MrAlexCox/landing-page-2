@@ -68,8 +68,14 @@ window.addEventListener("scroll", function () {
     let distThree = boxThree.getBoundingClientRect().top;
 
 
-    if (distOne < 150 || distOne < 10) {
-      selectOne.style.background = "blue";
+    if (distOne < 120 || distOne < 10) {
+
+      selectOne.style.backgroundImage = "url('images/header-bg.jpg')";
+
+      boxOne.style.background = "rgba(255,255,255,0.3)";
+      boxTwo.style.background = "none";
+      boxThree.style.background = "none";
+
     } else {
       selectOne.style.background = "none";
     }
@@ -84,9 +90,18 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
     let dist = boxTwo.getBoundingClientRect().top;
 
-    if (dist < 150 || dist < 10) {
+    if (dist < 180 || dist < 10) {
 
-      selectTwo.style.background = "blue";
+      selectTwo.style.background = "url('images/header-bg.jpg')";
+      selectOne.style.backgroundImage = "none";
+      selectThree.style.background = "none";
+
+      boxOne.style.background = "none";
+      boxTwo.style.background = "rgba(255,255,255,0.3)";
+      boxThree.style.background = "none";
+
+
+
 
     } else {
       selectTwo.style.background = "none";
@@ -97,9 +112,15 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
     let dist = boxThree.getBoundingClientRect().top;
 
-    if (dist < 150 || dist < 10) {
+    if (dist < 180 || dist < 10) {
 
-      selectThree.style.background = "blue";
+      selectThree.style.background = "url('images/header-bg.jpg')";
+      selectOne.style.background = "none";
+      selectTwo.style.background = "none";
+
+      boxOne.style.background = "none";
+      boxTwo.style.background = "none";
+      boxThree.style.background = "rgba(255,255,255,0.3)";
 
     } else {
       selectThree.style.background = "none";
