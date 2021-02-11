@@ -7,7 +7,7 @@ let nav = document.getElementById('nav-list')
 for (i=1; i < sections.length; i++) {
     let b = 'Section ' + [i];
     let c = 'section-' + [i];
-    nav.innerHTML += '<div class=\'section-select ' + c + '\' onclick="buttonScroll(\'' + c + '\');">' + b + '</div>'
+    nav.innerHTML += '<li class=\'section-select ' + c + '\' onclick="buttonScroll(\'' + c + '\');">' + b + '</li>'
 }
 
 
@@ -57,9 +57,12 @@ const segCont = document.querySelector('div.segment-container')
 const boxOne = document.querySelector('div.segment-1');
 const boxTwo = document.querySelector('div.segment-2');
 const boxThree = document.querySelector('div.segment-3');
-const selectOne = document.querySelector('div.section-1');
-const selectTwo = document.querySelector('div.section-2');
-const selectThree = document.querySelector('div.section-3');
+const boxFour = document.querySelector('div.segment-4');
+
+const selectOne = document.querySelector('li.section-1');
+const selectTwo = document.querySelector('li.section-2');
+const selectThree = document.querySelector('li.section-3');
+const selectFour = document.querySelector('li.section-4');
 
 
 window.addEventListener("scroll", function () {
@@ -95,6 +98,8 @@ window.addEventListener("scroll", function () {
       selectTwo.style.background = "url('images/header-bg.jpg')";
       selectOne.style.backgroundImage = "none";
       selectThree.style.background = "none";
+      selectFour.style.background = "none";
+
 
       boxOne.style.background = "none";
       boxTwo.style.background = "rgba(255,255,255,0.3)";
@@ -117,13 +122,39 @@ window.addEventListener("scroll", function () {
       selectThree.style.background = "url('images/header-bg.jpg')";
       selectOne.style.background = "none";
       selectTwo.style.background = "none";
+      selectFour.style.background = "none";
+
 
       boxOne.style.background = "none";
       boxTwo.style.background = "none";
       boxThree.style.background = "rgba(255,255,255,0.3)";
+      boxFour.style.background = "none";
+
 
     } else {
       selectThree.style.background = "none";
+
+    }
+})
+
+window.addEventListener("scroll", function () {
+    let dist = boxFour.getBoundingClientRect().top;
+
+    if (dist < 180 || dist < 10) {
+
+      selectThree.style.background = "none";
+      selectOne.style.background = "none";
+      selectTwo.style.background = "none";
+      selectFour.style.background = "url('images/header-bg.jpg')";
+
+
+      boxOne.style.background = "none";
+      boxTwo.style.background = "none";
+      boxThree.style.background = "none";
+      boxFour.style.background = "rgba(255,255,255,0.3)";
+
+    } else {
+      selectFour.style.background = "none";
 
     }
 })
