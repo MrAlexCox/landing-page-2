@@ -8,16 +8,32 @@ for (i=1; i < sections.length; i++) {
     let b = 'Section ' + [i];
     let c = 'section-' + [i];
     let d = 'nav-select-' + [i];
-    nav.innerHTML += '<li class=\'section-select\') id = ' + d + ';">' + b + '</li>';
+    nav.innerHTML += '<li class=\'section-select\' id=' + d + '>' + b + '</li>';
 
-    let selector = document.getElementById(c);
+    // let selector = document.getElementById(d);
+    //
+    // selector.addEventListener("click", function() {
+    //   let element = document.getElementById(c);
+    //   element.scrollIntoView({behavior: 'smooth', block: "center"})
+    // });
+    //
+    // console.log(selector);
 
-    selector.addEventListener("click", function() {
-      let element = document.getElementById(c);
-      element.scrollIntoView({behavior: 'smooth', block: "center"})
-    });
+};
 
-    console.log(selector);
+// let select = document.getElementsByClassName('section-select');
+
+for (i=1; i < sections.length; i++) {
+  let c = 'section-' + [i];
+  let d = 'nav-select-' + [i];
+  let selector = document.getElementById(d);
+
+  selector.addEventListener("click", function(event) {
+    let element = document.getElementById(c);
+    event.preventDefault()
+    element.scrollIntoView({behavior: 'smooth', block: "center"})
+  });
+
 
 };
 
@@ -71,10 +87,10 @@ const boxTwo = document.querySelector('div.segment-2');
 const boxThree = document.querySelector('div.segment-3');
 const boxFour = document.querySelector('div.segment-4');
 
-const selectOne = document.querySelector('li.section-1');
-const selectTwo = document.querySelector('li.section-2');
-const selectThree = document.querySelector('li.section-3');
-const selectFour = document.querySelector('li.section-4');
+const selectOne = document.getElementById('nav-select-1');
+const selectTwo = document.getElementById('nav-select-2');
+const selectThree = document.getElementById('nav-select-3');
+const selectFour = document.getElementById('nav-select-4');
 
 
 window.addEventListener("scroll", function () {
