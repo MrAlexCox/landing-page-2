@@ -7,18 +7,19 @@ let nav = document.getElementById('nav-list')
 for (i=1; i < sections.length; i++) {
     let b = 'Section ' + [i];
     let c = 'section-' + [i];
-    nav.innerHTML += '<li class=\'section-select ' + c + '\');">' + b + '</li>';
+    let d = 'nav-select-' + [i];
+    nav.innerHTML += '<li class=\'section-select\') id = ' + d + ';">' + b + '</li>';
 
-    let selector = document.getElementsByClassName(c);
+    let selector = document.getElementById(c);
 
-    selector.addEventListener("click", function buttonScroll() {
+    selector.addEventListener("click", function() {
       let element = document.getElementById(c);
       element.scrollIntoView({behavior: 'smooth', block: "center"})
     });
 
     console.log(selector);
 
-}
+};
 
 
 
